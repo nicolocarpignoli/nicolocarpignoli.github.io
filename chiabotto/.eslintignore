@@ -1,0 +1,15 @@
+# RNA
+# NPM
+/node_modules
+
+# LINT
+.eslintcache
+.stylelintcache
+
+# TEST
+/reports
+
+/dist
+/public
+
+# RNA
