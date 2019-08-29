@@ -6,7 +6,6 @@
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script src="events.js"></script>
     <script>
         THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
     </script>
@@ -27,7 +26,12 @@
             preset='custom'
             url='markers/dot.patt'>
 
-            <a-entity id="entity" scale="0.05 0.05 0.05" gltf-model="#animated-asset" animation-mixer></a-entity>
+            <a-entity
+                animation-mixer="loop: repeat"
+                gltf-model='#animated-asset'
+                scale="0.005 0.005 0.005"
+                rotation="-90 0 0"
+            ></a-entity>
         </a-marker>
 
         <a-entity camera></a-entity>
