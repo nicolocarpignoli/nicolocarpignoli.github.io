@@ -12,10 +12,10 @@
     <a-scene vr-mode-ui='enabled: false' embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         <a-assets>
-            <a-asset-item id='animated-asset' src='./models/Duck.glb'></a-asset-item>
+            <a-asset-item id='animated-asset' src='./models/scene.gltf'></a-asset-item>
         </a-assets>
         <a-marker type='pattern' preset='custom' url='./markers/pattern.patt'>
-            <a-entity id='animated-model' gltf-model='#animated-asset' animation-mixer>
+            <a-entity id='animated-model' scale="1.5 1.5 1.5" gltf-model='#animated-asset' animation-mixer>
             </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
