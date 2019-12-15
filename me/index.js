@@ -4,7 +4,7 @@ window.onload = function() {
 };
 
 var loadVideos = function() {
-    var dir = '../videos/';
+    var dir = './videos/';
     var playlist = [
         dir + '1.mp4',
         dir + '2.mp4',
