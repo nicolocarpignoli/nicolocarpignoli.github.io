@@ -1,0 +1,87 @@
+
+body {
+    background-color: #000000e0;
+    margin: 0 15%;
+}
+
+.pages-container {
+    font-family: 'Titillium web', sans-serif;
+    margin: 5em;
+    max-width: 40%;
+    margin: 0 2em;
+    max-width: none;
+}
+
+.headline {
+    color: #ee6;
+}
+
+.menu .content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.home {
+    fill: #ee6;
+    position: absolute;
+    top: 1em;
+}
+
+.home svg {
+    width: 2em;
+    height: 2em;
+}
+
+.inline {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.menu {
+    margin-bottom: 1em;
+    color: #eee;
+    list-style: none;
+    width: 100%;
+    margin-top: 5em;
+}
+
+a {
+    display: block;
+    text-decoration: underline;
+    color: inherit;
+}
+
+.menu a {
+    color: #ee6;
+    text-decoration: none;
+}
+
+@media all and (max-width: 850px) {
+    body {
+        font-size: 0.85em;
+        margin: 0;
+    }
+
+   .menu {
+       left: 0;
+       margin-left: 0;
+   }
+}
+
+.content {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+}
+
+.menu-element:hover {
+    background-color: white;
+    color: #000000e0;
+}
+
+.menu-element {
+    line-height: 2em;
+    font-size: 1.25em;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
