@@ -51,6 +51,10 @@ a {
     color: inherit;
 }
 
+.inline {
+    display: inline;
+}
+
 .menu a {
     color: #ee6;
     text-decoration: none;
