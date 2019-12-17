@@ -1,8 +1,15 @@
 # nicolocarpignoli.github.io
 
-## A playground for AR.js
+## New personal website
 
-## Demos
+Folder `/me`.
+Personal website built only using HTML + CSS and a bit of vanilla JS.
+
+<img width="500" heigth="300" src="./me/desktop.png">
+
+## A playground for AR.js (marker-based)
+
+### Demos
 
 - [AR.js basic example (`ar-playground/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-playground) Basic example using barcode markers. Start from here if you have never tried AR.js
 
@@ -14,7 +21,7 @@ I use this folder for experiments, also as a sandbox for snippets for my Medium 
 
 Don't mind other folders, they are temporary (used for speeches and similar stuff).
 
-## Articles
+### Articles
 
 * [Introduction to AR.js](https://medium.com/@nicolcarpignoli/ar-js-the-simplest-way-to-get-cross-browser-augmented-reality-on-the-web-10cbc721debc)
 * [Deliver AR.js content only with a QR-Code](https://medium.com/@nicolcarpignoli/how-to-deliver-ar-on-the-web-only-with-a-qr-code-139bb90e82f1)
