@@ -4,6 +4,10 @@ body {
     margin: 0 15%;
 }
 
+h1 {
+    font-size: 1.25em;
+}
+
 .pages-container {
     font-family: 'Titillium web', sans-serif;
     margin: 5em;
