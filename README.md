@@ -25,10 +25,19 @@ Don't mind other folders, they are temporary (used for speeches and similar stuf
 
 ### Articles
 
+**Image Based with AR.js (coming soon)**
+* ...
+
+**Marker Based with AR.js**
 * [Introduction to AR.js](https://medium.com/@nicolcarpignoli/ar-js-the-simplest-way-to-get-cross-browser-augmented-reality-on-the-web-10cbc721debc)
 * [Deliver AR.js content only with a QR-Code](https://medium.com/@nicolcarpignoli/how-to-deliver-ar-on-the-web-only-with-a-qr-code-139bb90e82f1)
 * [Handle click events with AR.js](https://medium.com/@nicolcarpignoli/how-to-handle-click-events-on-ar-js-f397ea5994d)
 * [10 tips to enhance your AR.js performances](https://medium.com/@nicolcarpignoli/10-tips-to-enhance-your-ar-js-app-8b44c6faffca)
+
+**Location Based with AR.js**
+* [Introduction to new Location Based feature on AR.js](https://medium.com/chialab-open-source/location-based-gps-augmented-reality-on-the-web-7a540c515b3c)
+* [Build your first Location Based Web AR - tutorial](https://medium.com/chialab-open-source/location-based-gps-augmented-reality-on-the-web-7a540c515b3c)
+
 
 [Check my Medium page/follow me](https://medium.com/@nicolcarpignoli). More articles upcoming.
 
