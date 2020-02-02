@@ -2,6 +2,7 @@
 body {
     background-color: #000000e0;
     margin: 0 15%;
+    color: #eee;
 }
 
 h1 {
@@ -9,7 +10,7 @@ h1 {
 }
 
 .pages-container {
-    font-family: 'Titillium web', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 5em;
     max-width: 40%;
     margin: 0 2em;
@@ -21,7 +22,6 @@ h1 {
 }
 
 .menu .content a {
-    color: white;
     text-decoration: underline;
 }
 
@@ -43,7 +43,6 @@ h1 {
 
 .menu {
     margin-bottom: 1em;
-    color: #eee;
     list-style: none;
     width: 100%;
     margin-top: 5em;
@@ -81,15 +80,10 @@ a {
     margin-bottom: 2em;
 }
 
-.menu-element:hover {
-    background-color: white;
-    color: #000000e0;
-}
-
 .menu-element {
     line-height: 2em;
     font-size: 1.25em;
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #eee;
 }
 

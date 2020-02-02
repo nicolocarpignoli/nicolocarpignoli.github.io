@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 10%;
+    color: #eee;
 }
 
 button[data-action="show"] {
@@ -10,7 +11,7 @@ button[data-action="show"] {
 }
 
 .container {
-    font-family: 'Titillium web', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 5em;
     perspective: 1000px;
     max-width: 40%;
@@ -81,16 +82,12 @@ a {
     font-size: 1.5em;
 }
 
-.menu-element:hover {
-    background-color: white;
-    color: #000000e0;
-}
 
 .menu-element {
     line-height: 2em;
     font-size: 1.5em;
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #eee;
 }
 
 
