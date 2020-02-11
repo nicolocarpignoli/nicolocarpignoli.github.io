@@ -7,7 +7,8 @@ body {
 }
 
 video {
-    position: absolute;
+    max-width: 1024px;
+    margin: 0 auto;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,7 +30,7 @@ button[data-action="show"] {
 }
 
 .menu {
-    max-width: 70%;
+    max-width: 30em;
     padding: 0.5em;
     background-color: rgb(20, 20, 20);
     left: 60%;
