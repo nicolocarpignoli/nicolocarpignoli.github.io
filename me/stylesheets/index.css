@@ -8,6 +8,7 @@ body {
 
 video {
     max-width: 1024px;
+    width: 50%;
     margin: 0 auto;
     top: 0;
     left: 0;
@@ -88,6 +89,7 @@ a {
     }
     
     video {
+        width: auto;
         opacity: 1;
     }
 
