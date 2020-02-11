@@ -89,7 +89,7 @@ a {
     }
     
     video {
-        width: auto;
+        width: 100%;
         opacity: 1;
     }
 
