@@ -11,9 +11,9 @@ video {
     margin: 0 auto;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.4;
 }
 
 button[data-action="show"] {
@@ -85,6 +85,10 @@ a {
     .container {
         margin: 0;
         width: 100%;
+    }
+    
+    video {
+        opacity: 1;
     }
 
    .px {
