@@ -25,6 +25,9 @@ var loadVideos = function() {
     videoElement.addEventListener('ended', function() {
         index++;
         var i = index === playlist.length ? 0 : index;
+        
+        if (i === 0) index = i;
+        
         videoElement.src = playlist[i];
         videoElement.play();
     });
