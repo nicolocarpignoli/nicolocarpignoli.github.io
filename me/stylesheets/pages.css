@@ -1,6 +1,6 @@
 
 body {
-    background-color: #000000e0;
+    background-color: rgb(20, 20, 20);
     margin: 0 15%;
     color: #eee;
 }
@@ -10,7 +10,7 @@ h1 {
 }
 
 .pages-container {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Space Mono', monospace;
     margin: 5em;
     max-width: 40%;
     margin: 0 2em;
@@ -58,6 +58,11 @@ a {
     display: inline;
 }
 
+.home {
+    color: #ee6;
+    text-decoration: none;
+}
+
 .menu a {
     color: #ee6;
     text-decoration: none;
@@ -76,14 +81,17 @@ a {
 }
 
 .content {
-    font-size: 1.25em;
     margin-bottom: 2em;
 }
 
 .menu-element {
     line-height: 2em;
-    font-size: 1.25em;
     cursor: pointer;
     border-bottom: 1px solid #eee;
 }
+
+.menu-element:last-child {
+    border: none;
+}
+
 
