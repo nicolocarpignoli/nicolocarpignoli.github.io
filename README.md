@@ -36,7 +36,7 @@ Don't mind other folders, they are temporary (used for speeches and similar stuf
 
 **Location Based with AR.js**
 * [Introduction to new Location Based feature on AR.js](https://medium.com/chialab-open-source/location-based-gps-augmented-reality-on-the-web-7a540c515b3c)
-* [Build your first Location Based Web AR - tutorial](https://medium.com/chialab-open-source/location-based-gps-augmented-reality-on-the-web-7a540c515b3c)
+* [Build your first Location Based Web AR - tutorial](https://medium.com/chialab-open-source/build-your-location-based-augmented-reality-web-app-c2442e716564)
 
 
 [Check my Medium page/follow me](https://medium.com/@nicolcarpignoli). More articles upcoming.
