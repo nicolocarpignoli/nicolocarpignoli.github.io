@@ -6,6 +6,7 @@ window.onload = function() {
 var loadVideos = function() {
     var dir = './videos/';
     var playlist = [
+        dir + '0.mp4',
         dir + '1.mp4',
         dir + '2.mp4',
         dir + '3.mp4',
@@ -25,9 +26,9 @@ var loadVideos = function() {
     videoElement.addEventListener('ended', function() {
         index++;
         var i = index === playlist.length ? 0 : index;
-        
+
         if (i === 0) index = i;
-        
+
         videoElement.src = playlist[i];
         videoElement.play();
     });
