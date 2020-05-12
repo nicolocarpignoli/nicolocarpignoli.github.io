@@ -5,11 +5,10 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <a-marker preset="hiro">
         <a-assets>
             <a-asset-item id='animated-asset' src='./models/scene.gltf'></a-asset-item>
         </a-assets>
-        <a-marker type='pattern' preset='custom' url='./markers/pattern.patt'>
+        <a-marker preset="hiro">
             <a-entity id='animated-model' scale="5 5 5" gltf-model='#animated-asset' animation-mixer>
             </a-entity>
         </a-marker>
