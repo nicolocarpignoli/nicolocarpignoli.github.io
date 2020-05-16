@@ -7,8 +7,6 @@ https://nicolocarpignoli.github.io/me
 Folder `/me`.
 Personal website built only using HTML + CSS and a bit of vanilla JS.
 
-<img width="500" heigth="300" src="./me/desktop.png">
-
 ## A playground for AR.js (marker-based)
 
 ### Demos
