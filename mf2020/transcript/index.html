@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>State of the ARt transcript by Nicolò Carpignoli</title>
+    <title>State of the ARt Webinar transcript by Nicolò Carpignoli</title>
 </head>
 <body style="margin: 0; padding: 1em;">
     <header>
@@ -12,7 +12,7 @@
     </header>
     <main>
         <p tabindex="0">
-            My name is Nicolò Carpignoli, I'm a webxr developer from Italy.
+            My name is Nicolò Carpignoli, I'm a WebXR developer from Italy.
             I'm working for Chia lab, a design and software company based in Bologna.
             You can find more about me on Github at nicolocarpignoli,
             On twitter at nicolocarp,
@@ -30,33 +30,39 @@
         </p>
         <p tabindex="0">
             Some examples of AR use cases can be:
-            I’d like to see how this new furniture fits on my room, the colors, the size,  etc... before buying it.
-            I’d like to learn biology, or anatomy: this 3D model I see, in real sizes, over my textbooks, is really helping me to understand sizes, to see every side of it, every detail, etc… and I can interact with it, it’s so cool and helpful!
-            I want to explore my city, walking in the historic center and see new places I do not know. To see anchors on my phone camera, where places really are, with some indications and distance, is helping me to find them.
-            I’m abroad and I have too much text in front of me in a language I do not know, I don’t have time to type it all on a translator: I will use this AR app that translates that to me in real time. Also, it’s chinese and I’m italian, how do I even type it ?
+            "I’d like to see how this new furniture fits on my room, the colors, the size,  etc... before buying it."
+            "I’d like to learn biology, or anatomy: this 3D model I see, in real sizes, over my textbooks, is really helping me to understand sizes,
+            to see every side of it, every detail, etc… and I can interact with it, it’s so cool and helpful!"
+            "I want to explore my city, walking in the historic center and see new places I do not know. To see anchors on my phone camera,
+            where places really are, with some indications and distance, is helping me to find them."
+            "I’m abroad and I have text in front of me in a language I do not know, I don’t have time to type it all on a translator:
+            I will use this AR app that translates that to me in real time. Also, it’s chinese and I’m italian, how do I even type it?"
         </p>
         <p tabindex="0">
             AR comes in different types: markerless, image tracking, location based, marker based. We will see each of them later, in detail, talking about technologies.
         </p>
         <p tabindex="0">
             Why are we talking about AR on the Web?
-            Because now it's possible to use AR on every user's phone, and it makes sense because this way,
+            Because now it's possible to use AR on every user's phone, and it makes sense, because this way,
             we can make AR content and apps collaborative, and build them easily.
-            For example, to have a mobile apps instead of a web app, it means:
+            For example, to have a mobile apps instead of a web app, it would mean:
             For developers, to have
-            High costs of development, build and release
-            To have a Macbook for iOS, developer licenses for both Android/iOS
-            To release a new app at every bugfix or feature.
+            High costs of development, build and release;
+            To have a Macbook for iOS, developer licenses for both Android/iOS;
+            To release a new app at every bugfix or feature.;
 
             For users, it means:
-            To find an app on the stores
-            To install an app  (storage issues)
-            To keep it updated
+            To find an app on the stores;
+            To install an app  (storage issues);
+            To keep it updated;
             To remember to delete it.
+
+            So the AR future, in my opinion, relies on the Web.
         </p>
         <p tabindex="0">
             Today we're going to talk about several, free and open source WebAR technologies.
             AR.js, WebXR Device API, jsartoolkit, model viewer and jeelizAR.
+            Let's start from the first of them.
         </p>
         <p tabindex="0">
             AR.js is written in Javascript and it features Marker Based, Image Tracking and Location Based AR.
@@ -70,13 +76,17 @@
             So we can augmented drawing, pictures, art, and make them live, for example starting from a movie poster
             and animate it with a 2D video overlayed on it.
             Content can be 3D models, videos, images, even audio. It uses aframe, a framework based on HTML and Javascript,
-            that makes easy to create content on the Web for AR and VR, that is, Virtual Reality.
+            that makes easy to create content on the Web for AR and VR - VR stands for Virtual Reality.
 
-            Instead, location based AR uses real-world coordinates to place AR content in context. Users can move freely (outdoors for better precision) and content associated with their location will be scaled and placed accordingly (e.g: content will render bigger / smaller based on distance to the user).
-            It can be used t0:
-            Show Augmented Reality informations of places walking on a park, a street, etc.
-            For Cities and museum tours, restaurant guides, treasure hunts, biology or history learning games or place virtual art on any real world location
+            Instead, location based AR uses real-world coordinates to place AR content in context. Users can move freely
+            (outdoors for better precision) and content associated with their location will be scaled and placed accordingly
+            (e.g: content will render bigger / smaller based on distance to the user).
+            It can be used to:
+            Show Augmented Reality informations of places walking on a park, a street, etc.,
+            For Cities and museum tours, restaurant guides, treasure hunts, biology or history learning games or place virtual art on any real world location,
             to create GPS based games (Pokèmon GO-like).
+
+            <a href="https://github.com/AR-js-org/AR.js">AR.js reference</a>
         </p>
         <p tabindex="0">
             You can even create markers inside QRCodes with custom qr code creators, in order to make the user, with a single scan,
@@ -86,7 +96,84 @@
             programming knowledge to be used, to create web ar with it and deploy it live on a website.
         </p>
         <p tabindex="0">
+            AR.js Studio instead is an authoring platform to create Web AR  Experiences. It uses AR.js under
+            the hood, but it's designed to develop AR without coding knowledge. You just choose your experience type,
+            marker or location  based, define anchors (for example places of interest if location based) and load your content, like 3D models,
+            images or videos.
+            You can then choose to publish  it live on  a website and it will output you a public URL,
+            or you can download the zip archive and play with it.
+            AR.js Studio is still not ready, me and all the AR.js organization are working to release a first demo
+            in June/July 2020.
 
+            <a href="https://github.com/AR-js-org/studio">AR.js Studio reference</a>
+        </p>
+        <p tabindex="0">
+            Now we're going to talk about WebXR Device API.
+            The future of Augmented Reality is the Immersive Web Community Group and the WebXR Device API
+            This new API is aiming to be a standard for both Web AR and Web VR technologies on browsers.
+            Currently it works on latest Chrome and Firefox versions, with ARCore compatible devices.
+            No rumors about Safari/iOS support.
+            We’re still from have it cross-browser, but it’s time to give it a look.
+            It features Markerless AR, hit-testing and soon DOM Overlay.
+            With Markerless AR we mean to see 3D models around you without needing a marker or an image as anchor.
+
+            <a href="https://aframe.io/blog/webxr-ar-module/">WebXR Device API reference</a>
+        </p>
+        <p tabindex="0">
+            jsartoolkit is a Javascript port for the Web of ARToolkit, the first of all OSS project of WebAR around.
+            jsartoolkit it's the base of AR.js, for example,  and of more projects.
+            It features the same AR types of AR.js but lacks of aframe support and location  based. But it gives you a better control on detection and tracking API.
+            It's suggested if you want to control tracking/detection better than with AR.js and you know JS/ComputerVision programming.
+
+            <a href="https://github.com/webarkit/jsartoolkit5">jsartoolkit reference</a>
+        </p>
+        <p tabindex="0">
+            Instead, WebARStudio it's the authoring platform for jsartoolkit. It's different from the previously showed AR.js Studio.
+            In this case, we have a more complex interface, but it makes it possible to create 3D complex scene.
+            So you can do more, talking about 3D stuff and then publish them as WebAR. But again, it's a bit more complicated. It depends on your needs
+            and your 3D design knowledge.
+
+            <a href="https://webarstudio.tripod-digital.co.nz/">WebARStudio reference</a>
+        </p>
+        <p tabindex="0">
+            Now it's time to talk about Model Viewer.
+            Model Viewer means WebXR (when supported) + Quick Look (on Apple) + Scene Viewer (on Android) + fallback experience.
+            It Features: markerless AR, place/scale objects, take pictures of the scene.
+            This is practically a layer on top of Google's and Apple's markerless solution for WebAr, although their solution is not
+            a real WebAR, because it opens a file with a native mobile view. Anyway, it can still be thought of 'web' based, as files
+            are served through the web.
+            This is the solution used by Google on Google Search, introduced in recent times: try to search for an animal on Google,
+            on the results you will find the possibility to see it on your room. That's Model Viewer.
+            Unfortunately it's not very cross browser and it's limited, because it's not possible to modify the scene when the
+            camera starts the AR scene. But it's possible to modify the web page that triggers it.
+            Code to use this solution is very simple, although you will need 3D models with GLTF and USDZ formats (latest for Apple devices).
+
+            <a href="https://modelviewer.dev/">Model Viewer reference</a>
+        </p>
+        <p tabindex="0">
+            Last but not least, jeelizAR and JeelizFaceFilter. They are based Machine Learning and are featuring Markerless AR
+            and Face Filters. These are two solutions based on neural networks.  You have to use pre-trained
+            neural networks or train one on your own. Then, when you have a neural network  in order to recognize a specific kind of objects (like a cup, a table, etc.)
+            you can use JeelizAR to track it real-time. It's very fast, faster than Tensorflow.js, authors said.
+            It comes also with face-tracking and face-detection and this specific library is called JeelizFaceFilter.
+            It's a great library and the only face filter AR around on the web for free. But it requires programming knowledge and also a bit of
+            Machine Learning basics to use it.
+
+            <a href="https://github.com/jeeliz/jeelizAR">JeelizAR reference</a>
+            <a href="https://github.com/jeeliz/jeelizFaceFilter">JeelizFaceFilter reference</a>
+
+        </p>
+        <p tabindex="0">
+            I hope you enjoyed. These were the most used Web AR technologies on Open Source as of mid 2020.
+            We have seen pros and cons, features and support on devices for each of them.
+            Some of them can be used without programming knowledge, other requires a bit of Javascript and Web programming basics.
+            You can learn more following me on Twitter at nicolocarp, on Medium at nicolcarpignoli or on these references:
+
+            <a href="https://nicolocarpignoli.github.io/me">My personal website</a>
+            <a href="https://chialab.it">Chialab website</a>
+            <a href="https://chialab.io">Chialab Open Source tech website</a>
+
+            Write me an email at nicolocarpignoli dot gmail dot com for collaborations, questions or just a chat! Bye!
         </p>
     </main>
 </body>
