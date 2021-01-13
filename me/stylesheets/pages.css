@@ -11,11 +11,14 @@ h1 {
 
 .pages-container {
     font-family: 'Space Mono', monospace;
-    margin: 5em;
-    max-width: 40%;
-    margin: 0 10em;
-    max-width: none;
     font-size: 1.2rem;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 1280px) {
+    .pages-container {
+        margin: 1rem;
+    }
 }
 
 .headline {
