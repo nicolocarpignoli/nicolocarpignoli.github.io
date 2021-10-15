@@ -12,14 +12,28 @@
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene vr-mode-ui="enabled: false" markerhandler embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-marker preset="hiro">
-            <a-video
+        <a-assets>
+            <video
+                id="vid"
                 src="./video.mp4"
-                smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2"
-                scale="3"
-                rotation="-90 -0 0"
-            >
-            </a-video>
+                preload="auto"
+                response-type="arraybuffer"
+                loop
+                crossorigin
+                webkit-playsinline
+                autoplay
+                muted
+                playsinline
+            ></video>
+        </a-assets>
+
+        <a-marker preset="hiro" markerhandler>
+            <a-video
+                src="#vid"
+                scale="1 1 1"
+                position="0 0.4 0"
+                rotation="-90 0 0"
+            ></a-video>
         </a-marker>
 
         <a-entity camera></a-entity>
