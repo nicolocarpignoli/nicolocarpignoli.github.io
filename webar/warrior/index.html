@@ -9,7 +9,7 @@
         <a-assets>
             <a-asset-item id='animated-asset' src='./models/scene.gltf'></a-asset-item>
         </a-assets>
-        <a-marker preset="hiro">
+        <a-marker preset="hiro" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
             <a-entity id='animated-model' scale="0.7 0.7 0.7" gltf-model='#animated-asset' animation-mixer>
             </a-entity>
         </a-marker>

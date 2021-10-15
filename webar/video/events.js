@@ -1,8 +1,11 @@
 AFRAME.registerComponent('markerhandler', {
     init: function() {
-        // start video at click anywhere
-        document.body.addEventListener('click', function(){
-            const video = document.querySelector('a-video');
-            video.play();
+        this.el.sceneEl.addEventListener('markerFound', () => {
+            // redirect to custom URL
+            document.querySelector('#vid').play();
+        });
+        this.el.sceneEl.addEventListener('markerLost', () => {
+            // redirect to custom URL
+            document.querySelector('#vid').pause();
         });
 }});

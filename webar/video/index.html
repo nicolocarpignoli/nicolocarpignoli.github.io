@@ -21,13 +21,11 @@
                 loop
                 crossorigin
                 webkit-playsinline
-                autoplay
-                muted
                 playsinline
             ></video>
         </a-assets>
 
-        <a-marker preset="hiro" markerhandler>
+        <a-marker preset="hiro" markerhandler smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
             <a-video
                 src="#vid"
                 scale="1 1 1"
