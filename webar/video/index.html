@@ -10,7 +10,10 @@
     <script src="./events.js"></script>
 
     <body style='margin : 0px; overflow: hidden;'>
-        <a-scene vr-mode-ui="enabled: false" markerhandler embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-scene
+            device-orientation-permission-ui="enabled: false"
+            vr-mode-ui="enabled: false"
+            markerhandler embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
             <video
@@ -18,7 +21,9 @@
                 src="./video.mp4"
                 preload="auto"
                 response-type="arraybuffer"
+                autoplay
                 loop
+                muted
                 crossorigin
                 webkit-playsinline
                 playsinline

@@ -5,7 +5,10 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
+    <a-scene
+        device-orientation-permission-ui="enabled: false"
+        vr-mode-ui="enabled: false"
+        embedded arjs>
         <a-assets>
             <a-asset-item id='animated-asset' src='./models/scene.gltf'></a-asset-item>
         </a-assets>
