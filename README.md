@@ -1,12 +1,5 @@
 # nicolocarpignoli.github.io
 
-## New personal website
-
-https://nicolocarpignoli.github.io/me
-
-Folder `/me`.
-Personal website built only using HTML + CSS and a bit of vanilla JS.
-
 ## A playground for AR.js (marker-based)
 
 ### Demos
