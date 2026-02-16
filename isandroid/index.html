@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const isAndroidChrome = async () => {
+            const uaData = navigator.userAgentData;
+            if (uaData?.getHighEntropyValues) {
+                const { platform, fullVersionList } = await uaData.getHighEntropyValues([
+                    'platform',
+                    'fullVersionList'
+                ]);
+
+                return platform === 'Android' && !!fullVersionList?.some((b) => b.brand === 'Google Chrome');
+            }
+
+            const ua = navigator.userAgent;
+
+            return (
+                /Android/i.test(ua) && /Chrome\/\d+/i.test(ua) && !/EdgA|OPR|SamsungBrowser|Brave/i.test(ua)
+            );
+        };
+
+        isAndroidChrome().then((result) => {
+            alert(`Is Android Chrome: ${result}`);
+        });
+    </script>
+</body>
+</html>
